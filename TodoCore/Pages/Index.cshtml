@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center mb-5">
+    <h1 class="display-4">Home</h1>
+</div>
+
+<div class="row mb-4">
+    <div class="col">
+        <form class="form-inline" method="post">
+            <label class="sr-only" for="Subject">Subject</label>
+            <input type="text" id="Subject" name="Subject" class="form-control mr-sm-2" placeholder="Subject" />
+
+            <div class="form-check mr-4">
+                <input type="checkbox" id="IsComplete" name="IsComplete" class="form-check-input" value="true" />
+                <label class="form-check-label" for="IsComplete">
+                    Is Complete
+                </label>
+            </div>
+
+            <button name="Button1" class="btn btn-primary" type="submit">Add</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <form method="post">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Task ID</th>
+                        <th>Subject</th>
+                        <th>Is Complete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.TaskItems)
+                    {
+                        <tr>
+                            <td>
+                                <button class="btn btn-primary" type="button">Edit</button>
+                                <button class="btn btn-danger" type="submit" asp-page-handler="delete" asp-route-id="@item.TaskId">Delete</button>
+                            </td>
+                            <td>@item.TaskId</td>
+                            <td>@item.Subject</td>
+                            <td>
+                                @if (item.IsComplete)
+                                {
+                                    <input type="checkbox" disabled checked />
+                                }
+                                else
+                                {
+                                    <input type="checkbox" disabled />
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>
