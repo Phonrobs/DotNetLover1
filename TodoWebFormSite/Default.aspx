@@ -21,6 +21,8 @@
                 </div>
 
                 <asp:Button ID="Button1" runat="server" Text="Add" CssClass="btn btn-primary" OnClick="Button1_Click" />
+
+                <asp:Button ID="Button2" runat="server" Text="Add with Error" CssClass="btn btn-danger ml-2" OnClick="Button2_Click" />
             </div>
         </div>
     </div>

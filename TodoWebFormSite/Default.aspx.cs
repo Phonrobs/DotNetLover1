@@ -14,4 +14,12 @@ public partial class _Default : Page
         SqlDataSource1.Insert();
         GridView1.DataBind();
     }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        SqlDataSource1.InsertParameters["Subject"].DefaultValue = txtSubject.Text;
+        SqlDataSource1.InsertParameters["IsComplete"].DefaultValue = "Can't not convert to boolean";
+        SqlDataSource1.Insert();
+        GridView1.DataBind();
+    }
 }
