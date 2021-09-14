@@ -29,3 +29,11 @@ textarea {
         padding: 0;
     }
 }
+
+.form-inline {
+    margin-bottom: 10px;
+}
+
+.form-group, .checkbox, .btn {
+    margin-right: 10px;
+}

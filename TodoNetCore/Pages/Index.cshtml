@@ -4,4 +4,48 @@
     ViewData["Title"] = "Home page";
 }
 
-<h1 class="display-4">Todo</h1>
+<h1 class="display-4">My Tasks</h1>
+
+<form class="form-inline" method="post">
+    <div class="form-group">
+        <label class="sr-only" for="txtSubject">Subject</label>
+        <input type="text" name="Subject" class="form-control" placeholder="Subject" />
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="IsComplte" />
+            Is Complete
+        </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+    <button type="submit" class="btn btn-danger" asp-page-handler="WithError">Add with Error</button>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>TaskId</th>
+            <th>Subject</th>
+            <th>IsComplete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.TaskItems)
+        {
+            <tr>
+                <td>@item.TaskId</td>
+                <td>@item.Subject</td>
+                <td>
+                    @if (item.IsComplete)
+                    {
+                        <input type="checkbox" disabled checked />
+                    }
+                    else
+                    {
+                        <input type="checkbox" disabled />
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
