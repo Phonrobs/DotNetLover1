@@ -3,30 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TodoWebFormSite", "TodoWebFormSite\", "{0E331C6A-94EB-47F6-ABB2-7DE97573A0C8}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
-		ProjectReferences = ""
-		Debug.AspNetCompiler.VirtualPath = "/localhost_49516"
-		Debug.AspNetCompiler.PhysicalPath = "TodoWebFormSite\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49516\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_49516"
-		Release.AspNetCompiler.PhysicalPath = "TodoWebFormSite\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49516\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "49516"
-		SlnRelativePath = "TodoWebFormSite\"
-		DefaultWebSiteLanguage = "Visual C#"
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoCore", "TodoCore\TodoCore.csproj", "{D07F9FAA-1922-4897-A077-93CCC29D1C88}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{6556CB26-738C-44CE-BC47-29A44E9097AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoWebForm", "TodoWebForm\TodoWebForm.csproj", "{2040C476-C248-46C2-BF4E-3FEB4A59B10A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoNetCore", "TodoNetCore\TodoNetCore.csproj", "{BA7777F3-236A-4328-9432-0D320DD8CF8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,14 +17,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0E331C6A-94EB-47F6-ABB2-7DE97573A0C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E331C6A-94EB-47F6-ABB2-7DE97573A0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0E331C6A-94EB-47F6-ABB2-7DE97573A0C8}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{0E331C6A-94EB-47F6-ABB2-7DE97573A0C8}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{D07F9FAA-1922-4897-A077-93CCC29D1C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D07F9FAA-1922-4897-A077-93CCC29D1C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D07F9FAA-1922-4897-A077-93CCC29D1C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D07F9FAA-1922-4897-A077-93CCC29D1C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2040C476-C248-46C2-BF4E-3FEB4A59B10A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2040C476-C248-46C2-BF4E-3FEB4A59B10A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2040C476-C248-46C2-BF4E-3FEB4A59B10A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2040C476-C248-46C2-BF4E-3FEB4A59B10A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA7777F3-236A-4328-9432-0D320DD8CF8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7777F3-236A-4328-9432-0D320DD8CF8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7777F3-236A-4328-9432-0D320DD8CF8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7777F3-236A-4328-9432-0D320DD8CF8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
